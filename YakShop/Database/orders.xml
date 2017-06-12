@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+  <order>
+    <T>13</T>
+    <customer>Ashish</customer>
+    <milk>100</milk>
+    <skins>2</skins>
+  </order>
+  <order>
+    <T>14</T>
+    <customer>Ashish</customer>
+    <milk>100</milk>
+    <skins>2</skins>
+  </order>
+  <order>
+    <T>14</T>
+    <customer>Mahesh</customer>
+    <milk>100</milk>
+    <skins>0</skins>
+  </order>
+</orders>

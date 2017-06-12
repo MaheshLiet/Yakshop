@@ -1,0 +1,36 @@
+﻿@{
+	ViewBag.Title = "UploadFile";
+}
+
+<div class="row">
+	<div class="col-lg-12">
+		<h1 class="page-header">YAK SHOP CONFIGURATION FORM</h1>
+	</div>
+	<!-- /.col-lg-12 -->
+</div>
+<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-body">
+
+				@using (Html.BeginForm("UploadFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+				{
+					<div class="form-group">
+						<label>Elaps Time in days</label>
+						@Html.TextBox("text", "", new { type = "text", Class = "form-control" })
+					</div>
+					<div class="form-group">
+						<label>Upload File(*.xml only)</label>
+						@Html.TextBox("file", "", new { type = "file" })
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Upload" class="btn btn-primary" />
+					</div>
+					<br />
+						@Html.Raw(@ViewBag.Message);
+
+				}
+			</div>
+		</div>
+	</div>
+</div>
